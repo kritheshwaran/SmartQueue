@@ -274,6 +274,6 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'SmartQueue API is running' });
 });
 
-app.listen(PORT, () => {
-  console.log(`SmartQueue server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`SmartQueue server running on port ${PORT}`);
 });
